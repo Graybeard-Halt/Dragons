@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "dragons",
+  "version": "${version}",
+  "name": "Dragons",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Brock/dragons"
+  },
+  "license": "MIT",
+  "icon": "assets/dragons/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.haltocarrick.dragons.client.DragonsClient"
+    ],
+    "main": [
+      "net.haltocarrick.dragons.Dragons"
+    ]
+  },
+  "mixins": [
+    "dragons.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric": "*",
+    "minecraft": "1.19.4"
+  }
+}
